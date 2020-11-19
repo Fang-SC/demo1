@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -8,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping(value = "User")
+@Slf4j
 public class UserController {
 
     @Value("${resource.getImage}")
@@ -29,6 +31,7 @@ public class UserController {
     @ResponseBody
     public String getFile() {
         //提交测试.....
+        log.error("error.....");
         return file;
     }
 }
