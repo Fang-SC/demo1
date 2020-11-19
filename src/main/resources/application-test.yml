@@ -1,0 +1,3 @@
+resource:
+  getImage: testceshiImage
+  getFile: testceshiFile

@@ -1,0 +1,19 @@
+server:
+  port: 8082
+#根据环境决定需要哪个yml文件
+spring:
+  profiles:
+    active: test
+
+# 数据库连接
+  datasource:
+    url: jdbc:mysql://localhost:3306/dmzjsj?useSSL=false&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+# 取消页面缓存
+  thymeleaf:
+    cache: false
+
+mybatis:
+  mapper-locations: classpath:mysql/mappering/*.xml

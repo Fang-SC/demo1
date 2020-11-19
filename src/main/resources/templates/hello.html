@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <h1>模板页面!!!!!!</h1>
+ <span th:text="${username}"></span>
+ <span th:text="|${username},测试|+|01234|"></span>
+ <br>
+ id:<span th:text="${user.id}"></span>
+ str1:<span th:text="${user.str1}"></span>
+ str2:<span th:text="${user.str2}"></span>
+ str3:<span th:text="${user.str3}"></span>
+
+<hr/>
+ <span th:if="${money>50}">有钱</span>
+ <span th:unless="${money>50}">还需努力</span>
+
+<hr/>
+ <table>
+
+     <tr>
+         <td>ID</td>
+         <td>str1</td>
+         <td>str2</td>
+         <td>str3</td>
+     </tr>
+     <tr th:each="list:${list}">
+         <td th:text="${list.id}">id</td>
+         <td th:text="${list.str1}">str1</td>
+         <td th:text="${list.str2}">str2</td>
+         <td th:text="${list.str3}">str3</td>
+     </tr>
+ </table>
+
+</body>
+</html>
