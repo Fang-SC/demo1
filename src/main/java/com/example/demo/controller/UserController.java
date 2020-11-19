@@ -31,7 +31,7 @@ public class UserController {
     @ResponseBody
     public String getFile() {
         //提交测试.....
-        log.error("error.....");
+        log.error("error.....000");
         return file;
     }
 }
