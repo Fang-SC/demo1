@@ -28,6 +28,7 @@ public class UserController {
     @RequestMapping(value = "file",method = RequestMethod.GET)
     @ResponseBody
     public String getFile() {
+        system.out.println("add other message");
         return file;
     }
 }
