@@ -34,6 +34,7 @@ public class UserController {
         log.error("error.....");
         System.out.println("dev add.......");
         log.info("info.......");
+        log.warn("warn.......");
         return file;
     }
 }
