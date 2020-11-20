@@ -32,6 +32,7 @@ public class UserController {
     public String getFile() {
         //提交测试.....
         log.error("error.....");
+        System.out.println("dev add.......");
         return file;
     }
 }
