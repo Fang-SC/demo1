@@ -33,6 +33,7 @@ public class UserController {
         //提交测试.....
         log.error("error.....");
         System.out.println("dev add.......");
+        log.info("info.......");
         return file;
     }
 }
